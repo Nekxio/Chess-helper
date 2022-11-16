@@ -20,9 +20,8 @@ Un fichier 'config.php' a également été créé pour importer les fichiers né
 
 ### Open/Closed Principle
 Le principe Ouvert/Fermé demande de ne pas modifier le comportement d’une action en fonction d’un paramètre, mais plutôt d’étendre les capacités dudit paramètre grâce à une fonction définie en amont. Les classes doivent être ouvertes à l'extension mais fermées à la modification. Ainsi, si nous voulons ajouter une nouvelle fonctionnalité au site, nous devons créer une nouvelle classe et non modifier une classe existante.
-D'après les exemples de l'un des sites fournis, j'ai jugé que le code répondait aux critères de ce principe.
 
-En effet, chaque class de pièce comporte chacune une fonction 'deplacementPossible' qui permet de déterminer si le déplacement de la pièce est possible ou non. Si nous voulons ajouter une nouvelle pièce, nous devons créer une nouvelle class qui hérite de la class Piece et qui contient une fonction 'deplacement' qui permet de déterminer si le déplacement de la pièce est possible ou non. Nous n'avons donc pas besoin de modifier la class Piece.
+Chaque class de pièce comporte chacune une fonction 'deplacementPossible' qui permet de déterminer si le déplacement de la pièce est possible ou non. Si nous voulons ajouter une nouvelle pièce, nous devons créer une nouvelle class qui hérite de la class Piece et qui contient une fonction 'deplacement' qui permet de déterminer si le déplacement de la pièce est possible ou non. Nous n'avons donc pas besoin de modifier la class Piece.
 
 ### Liskov Substitution Principle
 Le principe de substitution de Liskov permet d’interchanger les enfants d’une classe sans que cela ait d’incidence sur l’exécution du code. Ainsi, si nous voulons utiliser une classe fille à la place d'une classe mère, le code doit fonctionner correctement.
