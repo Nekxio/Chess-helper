@@ -1,5 +1,5 @@
 <?php
-interface pieceInterface {
+interface PieceInterface {
     public function deplacementPossible() : array;
 }
 

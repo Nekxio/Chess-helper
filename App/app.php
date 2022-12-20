@@ -18,7 +18,7 @@
 //Chaque résultat est contenu entre A1 et H8 
 
 //On importe les classes de chaque pièce et de l'échiquier
-require __DIR__."/echiquier/config.php";
+require __DIR__."/config.php";
 
 $echiquier = new Echiquier();
 

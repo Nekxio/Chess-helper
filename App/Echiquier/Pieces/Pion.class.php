@@ -1,5 +1,5 @@
 <?php
-class Pion extends Piece implements pieceInterface{
+class Pion extends Piece implements PieceInterface{
     public function __construct($position) {
         parent::__construct($position);
     }

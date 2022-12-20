@@ -1,6 +1,6 @@
 <?php
-class Reine extends Piece implements pieceInterface{
-    public function __construct($position) {
+class Tour extends Piece implements PieceInterface {
+    public function __construct($position){
         parent::__construct($position);
     }
     public function deplacementPossible() : array {
@@ -11,10 +11,6 @@ class Reine extends Piece implements pieceInterface{
             $deplacementPossible[] = chr(ord($position[0]) - $i) . $position[1];
             $deplacementPossible[] = $position[0] . ($position[1] + $i);
             $deplacementPossible[] = $position[0] . ($position[1] - $i);
-            $deplacementPossible[] = chr(ord($position[0]) + $i) . ($position[1] + $i);
-            $deplacementPossible[] = chr(ord($position[0]) + $i) . ($position[1] - $i);
-            $deplacementPossible[] = chr(ord($position[0]) - $i) . ($position[1] - $i);
-            $deplacementPossible[] = chr(ord($position[0]) - $i) . ($position[1] + $i);
         }
         return $deplacementPossible;
     }

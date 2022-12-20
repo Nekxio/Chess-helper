@@ -1,5 +1,5 @@
 <?php
-class Cavalier extends Piece implements pieceInterface {
+class Cavalier extends Piece implements PieceInterface {
     public function __construct($position) {
         parent::__construct($position);
     }

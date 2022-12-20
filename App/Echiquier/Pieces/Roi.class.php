@@ -1,5 +1,5 @@
 <?php
-class Roi extends Piece implements pieceInterface{
+class Roi extends Piece implements PieceInterface{
     public function __construct($position) {
         parent::__construct($position);
     }
