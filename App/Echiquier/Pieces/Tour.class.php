@@ -1,4 +1,7 @@
 <?php
+namespace Echiquier\Pieces;
+use Echiquier\Piece;
+use Echiquier\PieceInterface;
 class Tour extends Piece implements PieceInterface {
     public function __construct($position){
         parent::__construct($position);

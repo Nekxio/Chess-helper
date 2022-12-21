@@ -1,4 +1,5 @@
 <?php
+namespace Echiquier;
 interface PieceInterface {
     public function deplacementPossible() : array;
 }

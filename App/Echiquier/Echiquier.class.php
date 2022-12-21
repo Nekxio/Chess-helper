@@ -1,4 +1,5 @@
 <?php
+namespace Echiquier;
 class Echiquier {
     private $echiquier = array(
         array('A' => '■', 'B' => '□', 'C' => '■', 'D' => '□', 'E' => '■', 'F' => '□', 'G' => '■', 'H' => '□'),

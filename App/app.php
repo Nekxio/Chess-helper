@@ -19,6 +19,7 @@
 
 //On importe les classes de chaque pièce et de l'échiquier
 require __DIR__."/config.php";
+use Echiquier\Echiquier;
 
 $echiquier = new Echiquier();
 
